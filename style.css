@@ -24,6 +24,7 @@ nav{
     list-style: none;
     padding-inline: 5px;
     cursor: pointer;
+    color: #222;
 }   
 
 main{
@@ -34,6 +35,19 @@ main{
     width: 100%;
     padding-top: 200px;
     min-height: 220px;
+}
+
+#searchbar{
+    display: flex;
+    height: 39px;
+    width: 560px;
+    padding-left: 14px;
+    border-radius: 20px;
+    border: 1px solid #dfe1e5;
+    background-color: #fff;
+}
+#searchbar:hover{
+    box-shadow: 0 0 4px rgb(182, 179, 179);
 }
 
 footer{
