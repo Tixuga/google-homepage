@@ -22,14 +22,15 @@ nav {
     justify-content: flex-end;
     align-items: center;
     font-family: arial, sans-serif;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-right: 15px;
 }
 
 .nav-links li {
     list-style: none;
-    padding-inline: 5px;
+    padding-inline: 7.5px;
     cursor: pointer;
+    vertical-align: middle;
 }
 
 #signin {
@@ -56,10 +57,18 @@ main {
     min-height: 220px;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 26px;
+}
+
 #searchbar {
     display: flex;
-    height: 39px;
-    width: 560px;
+    height: 46px;
+    width: 584px;
     padding-left: 14px;
     border-radius: 20px;
     border: 1px solid #dfe1e5;
@@ -67,8 +76,48 @@ main {
 }
 
 #searchbar:hover {
-    box-shadow: 0 0 4px rgb(182, 179, 179);
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
+
+.search-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 58px;
+
+}
+
+input[type=submit] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    width: 128px;
+    height: 36px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+input:focus {
+    outline: none;
+}
+
+#search-button {
+    font-size: 14px;
+}
+
+#lucky-button {
+    width: 142.5px;
+    font-size: 14px;
+}
+
 
 footer {
     position: absolute;
